@@ -13,10 +13,10 @@ This is my personal developer portfolio built with **Next.js** and **Tailwind CS
   Minimal pill nav with links to *Home, About, Work, Projects, Contact*, plus a dark/light mode toggle.
 
 - **Open to Roles**  
-  Callout cards highlighting the roles I’m looking for (Software Engineer, Backend Engineer, Full-Stack Engineer).
+  Cards highlighting the roles I’m looking for (Software Engineer, Backend Engineer, Full-Stack Engineer).
 
 - **Projects**  
-  Responsive grid with hover animations and tag chips.
+  Responsive grid with hover animations and tags.
 
 - **Work Timeline**  
   Bullet markers to highlight professional experience.
