@@ -3,28 +3,31 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { site } from '@/lib/siteConfig'
+import { Toaster } from 'react-hot-toast'
 
-export const metadata: Metadata = {
-  title: `${site.name} — ${site.title}`,
-  description: site.description,
-  metadataBase: new URL('https://example.com'),
-  openGraph: {
-    title: `${site.name} — ${site.title}`,
-    description: site.description,
-    url: site.url,
-    siteName: site.name,
-    type: 'website'
-  },
-  twitter: { card: 'summary_large_image' }
-}
+export const metadata: Metadata = { title: `${site.name} — ${site.title}`,
+                                     description: site.description }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  
   return (
     <html lang="en">
       <body>
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            try {
+              var t = localStorage.getItem('theme');
+              if (!t) {
+                t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+              }
+              document.documentElement.setAttribute('data-theme', t === 'light' ? 'light' : 'dark');
+            } catch (e) { document.documentElement.setAttribute('data-theme', 'dark'); }
+          })();
+        ` }} />
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <Toaster position="bottom-center" />
       </body>
     </html>
   )
