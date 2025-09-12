@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { site } from '@/lib/siteConfig'
 import { Toaster } from 'react-hot-toast'
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = { title: `${site.name} — ${site.title}`,
                                      description: site.description }
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <Toaster position="bottom-center" />
+        <Analytics />
       </body>
     </html>
   )
