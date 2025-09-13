@@ -29,7 +29,7 @@ This is my personal developer portfolio built with **Next.js** and **Tailwind CS
 
 - **Contact Form**  
   - Validation with shake animation if fields are empty  
-  - Success message with confetti + checkmark  
+  - Success message with checkmark  
   - Sends emails via **Nodemailer** with SMTP credentials
 
 - **Dark / Light Theme**  
