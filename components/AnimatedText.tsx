@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 
-const phrases = ['Backend Software Engineer','Full-Stack Developer','Tech Enthusiast']
+const phrases = ['Backend Software Engineer','Full-Stack Developer','Distributed Systems Enthusiast']
 
 export default function AnimatedText(){
   const [i, setI] = useState(0); const [s, setS] = useState(''); const [del, setDel] = useState(false)
