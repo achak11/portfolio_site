@@ -2,7 +2,7 @@ export const site = {
   name: "Anurag Chakraborty",
   title: "Software Engineer · Backend & Full-Stack Software Engineer",
   description: "I build reliable backend infrastructure and robust full-stack apps with Spring Boot, Next.js, PostgreSQL, and cloud tooling (Docker & Kubernetes).",
-  url: "https://example.com",
+  url: "https://anuragc.vercel.app/",
   email: "anurag.cs.jobs@gmail.com",
   socials: {
     github: "https://github.com/achak11",
@@ -20,25 +20,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Marketplace MVP for 30+ Merchants",
-    description: "Full-stack marketplace on Next.js + Supabase; tiered discounts & claims.",
-    tags: ["Next.js","TypeScript","Supabase","Tailwind"],
-    link: "#",
+    title: "Auto-Scaling Load Balancer in K8s",
+    description: "CPU-driven autoscale with stress-ng; 85% utilization threshold.",
+    tags: ["Kubernetes","Autoscaling","DevOps"],
+    link: "https://github.com/achak11/Auto-Scaling-Kubernetes-Cluster",
     image: "/project-1.jpg"
   },
   {
     title: "Fault-Tolerant Distributed Bitcoin Miner",
     description: "Erlang actors hashing millions of candidates across nodes.",
     tags: ["Erlang","Actors","SHA-256"],
-    link: "#",
+    link: "https://github.com/achak11/bitcoin_miner",
     image: "/project-2.jpg"
-  },
-  {
-    title: "Auto-Scaling Load Balancer in K8s",
-    description: "CPU-driven autoscale with stress-ng; 85% utilization threshold.",
-    tags: ["Kubernetes","Autoscaling","DevOps"],
-    link: "#",
-    image: "/project-3.jpg"
   }
 ]
 
