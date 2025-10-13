@@ -27,11 +27,18 @@ export const projects: Project[] = [
     image: "/project-1.jpg"
   },
   {
+    title: "ChatApp — Realtime Messaging Platform",
+    description: "Realtime Spring Boot + React chat app with JWT security, PostgreSQL + Flyway, and seeded demo chats for live showcase.",
+    tags: ["SpringBoot","React","PostgreSQL"],
+    link: "https://github.com/achak11/chat_app",
+    image: "/project-2.jpg"
+  },
+  {
     title: "Fault-Tolerant Distributed Bitcoin Miner",
     description: "Erlang actors hashing millions of candidates across nodes.",
     tags: ["Erlang","Actors","SHA-256"],
     link: "https://github.com/achak11/bitcoin_miner",
-    image: "/project-2.jpg"
+    image: "/project-3.jpg"
   }
 ]
 
